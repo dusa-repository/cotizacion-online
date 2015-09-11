@@ -1,15 +1,14 @@
 <zk>
 	<style src="../public/Estilo.css" />
-	<div id="divVF0014" apply="controlador.maestros.CF0014"
-		width="100%">
+	<div id="divVF0014" apply="controlador.maestros.CF0014" width="100%">
 		<groupbox width="auto" mold="3d"
-			title="Trabajo con Codigo de Monedas y Tarifas (VF0013)">
+			title="Trabajo con Condiciones de Pago (VF0014)">
 			<div id="botoneraF0014" />
 			<separator />
-			<groupbox class="azul" id="gpxRegistro" width="auto"
-				title="" open="false">
+			<groupbox class="azul" id="gpxRegistro" width="auto" title=""
+				open="false">
 				<caption label="Nuevo" style="font-weight:bold"
-					tooltiptext="Presione para Registrar una Nueva Moneda" />
+					tooltiptext="Presione para Registrar una Nueva Condicion de Pago" />
 				<separator />
 				<grid width="100%">
 					<columns visible="false">
@@ -21,63 +20,121 @@
 					<rows>
 						<row>
 							<hbox>
-								<label class="etiqueta"
-									value="Codigo Moneda:" />
+								<label class="etiqueta" value="Codigo:" />
 								<space />
-								<label value="*"
-									style="font-weight:bold;color:red">
+								<label value="*" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<textbox id="txtCRCDF0013" hflex="1"
-								maxlength="3"
+							<textbox id="txtCodigo" hflex="1" maxlength="3"
 								tooltiptext="Ingrese el Codigo de la Moneda (CVCRCD)" />
-							<hbox />
-							<hbox />
+							<hbox>
+								<label class="etiqueta" value="Descripcion:" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<textbox id="txtDescripcion" hflex="1" maxlength="3"
+								tooltiptext="Ingrese el Codigo de la Moneda (CVCRCD)" />
 						</row>
 						<row>
 							<hbox>
-								<label class="etiqueta"
-									value="Descripcion:" />
+								<label class="etiqueta" value="Codigo:" />
 								<space />
-								<label value="*"
-									style="font-weight:bold;color:red">
+								<label value="*" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<cell colspan="2">
-								<textbox id="txtDL01F0013" hflex="1"
-									maxlength="30" multiline="true"
-									tooltiptext="Ingrese la Descripcion de la Moneda (CVDL01)" />
-							</cell>
-							<hbox />
+							<textbox id="txtCodigo" hflex="1" maxlength="3"
+								tooltiptext="Ingrese el Codigo de la Moneda (CVCRCD)" />
+							<hbox>
+								<label class="etiqueta" value="Descripcion:" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<textbox id="txtDescripcion" hflex="1" maxlength="3"
+								tooltiptext="Ingrese el Codigo de la Moneda (CVCRCD)" />
 						</row>
 						<row>
-							<label class="etiqueta"
-								value="Visualizacion decimales:" />
-							<textbox id="txtDECF0013" hflex="1"
-								maxlength="1"
-								tooltiptext="Ingrese el numero de decimales de la moneda (CVCDEC)" />
-							<hbox />
-							<hbox />
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
 						</row>
 						<row>
-							<label class="etiqueta"
-								value="Importe traductor Palabras:" />
-							<textbox id="txtCKRF0013" hflex="1"
-								maxlength="10"
-								tooltiptext="Ingrese el Importe del traductor de Palabras (CVCKR)" />
-							<hbox />
-							<hbox />
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
 						</row>
 					</rows>
 				</grid>
 			</groupbox>
 			<separator />
-			<groupbox class="azul" id="gpxDatos" width="auto"
-				title="">
+			<groupbox class="azul" id="gpxDatos" width="auto" title="">
 				<caption label="Registros" style="font-weight:bold"
-					tooltiptext="Presione para Visualizar las Monedas Registradas" />
+					tooltiptext="Presione para Visualizar las Condiciones de Pago" />
 				<div id="catalogoF0014"
-					tooltiptext="Seleccione la Moneda para Realizar una Accion" />
+					tooltiptext="Seleccione la Condicion de Pago para Realizar una Accion" />
 			</groupbox>
 			<separator />
 			<separator />
