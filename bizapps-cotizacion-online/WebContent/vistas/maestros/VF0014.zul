@@ -25,105 +25,105 @@
 								<label value="*" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<textbox id="txtCodigo" hflex="1" maxlength="3"
-								tooltiptext="Ingrese el Codigo de la Moneda (CVCRCD)" />
+							<textbox id="txtCodigo" hflex="1" maxlength="10"
+								tooltiptext="Ingrese el Codigo de la Condicion de Pago (pnptc)" />
 							<hbox>
 								<label class="etiqueta" value="Descripcion:" />
 								<space />
 								<label value="*" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<textbox id="txtDescripcion" hflex="1" maxlength="3"
-								tooltiptext="Ingrese el Codigo de la Moneda (CVCRCD)" />
+							<textbox id="txtDescripcion" hflex="1" maxlength="20"
+								tooltiptext="Ingrese la Descripcion de la Condicion de Pago (CVCRCD)" />
 						</row>
 						<row>
 							<hbox>
 								<label class="etiqueta" value="Codigo:" />
 								<space />
-								<label value="*" style="font-weight:bold;color:red">
+								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<textbox id="txtCodigo" hflex="1" maxlength="3"
+							<textbox id="txtField1" hflex="1" maxlength="3"
 								tooltiptext="Ingrese el Codigo de la Moneda (CVCRCD)" />
 							<hbox>
 								<label class="etiqueta" value="Descripcion:" />
 								<space />
-								<label value="*" style="font-weight:bold;color:red">
+								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<textbox id="txtDescripcion" hflex="1" maxlength="3"
+							<textbox id="txtField2" hflex="1" maxlength="3"
 								tooltiptext="Ingrese el Codigo de la Moneda (CVCRCD)" />
 						</row>
 						<row>
 							<hbox>
 								<label class="etiqueta" value=" Siglo" />
 								<space />
-								<label value="*" style="font-weight:bold;color:red">
+								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+							<doublebox id="txtField3" hflex="1"
 								tooltiptext="Ingrese el Siglo (NLCTRY)" />
 							<hbox>
 								<label class="etiqueta" value=" Siglo" />
 								<space />
-								<label value="*" style="font-weight:bold;color:red">
+								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
-								tooltiptext="Ingrese el Siglo (NLCTRY)" />
-						</row>
-						<row>
-							<hbox>
-								<label class="etiqueta" value=" Siglo" />
-								<space />
-								<label value="*" style="font-weight:bold;color:red">
-								</label>
-							</hbox>
-							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
-								tooltiptext="Ingrese el Siglo (NLCTRY)" />
-							<hbox>
-								<label class="etiqueta" value=" Siglo" />
-								<space />
-								<label value="*" style="font-weight:bold;color:red">
-								</label>
-							</hbox>
-							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+							<doublebox id="txtField4" hflex="1"
 								tooltiptext="Ingrese el Siglo (NLCTRY)" />
 						</row>
 						<row>
 							<hbox>
 								<label class="etiqueta" value=" Siglo" />
 								<space />
-								<label value="*" style="font-weight:bold;color:red">
+								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+							<doublebox id="txtField5" hflex="1"
 								tooltiptext="Ingrese el Siglo (NLCTRY)" />
 							<hbox>
 								<label class="etiqueta" value=" Siglo" />
 								<space />
-								<label value="*" style="font-weight:bold;color:red">
+								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+							<doublebox id="txtField6" hflex="1"
 								tooltiptext="Ingrese el Siglo (NLCTRY)" />
 						</row>
 						<row>
 							<hbox>
 								<label class="etiqueta" value=" Siglo" />
 								<space />
-								<label value="*" style="font-weight:bold;color:red">
+								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+							<doublebox id="txtField7" hflex="1"
 								tooltiptext="Ingrese el Siglo (NLCTRY)" />
 							<hbox>
 								<label class="etiqueta" value=" Siglo" />
 								<space />
-								<label value="*" style="font-weight:bold;color:red">
+								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+							<doublebox id="txtField8" hflex="1"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtField9" hflex="1"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtField10" hflex="1"
 								tooltiptext="Ingrese el Siglo (NLCTRY)" />
 						</row>
 					</rows>

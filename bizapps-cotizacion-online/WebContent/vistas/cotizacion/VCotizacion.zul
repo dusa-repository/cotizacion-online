@@ -1,0 +1,265 @@
+<zk>
+	<style src="../public/Estilo.css" />
+	<div id="divVCotizacion" apply="controlador.cotizacion.CCotizacion"
+		width="100%">
+		<groupbox width="auto" mold="3d" title="Trabajo con Cotizaciones">
+			<div id="botoneraCotizacion" />
+			<separator />
+			<groupbox class="azul" id="gpxRegistro" width="auto" title=""
+				open="false">
+				<caption label="Nuevo" style="font-weight:bold"
+					tooltiptext="Presione para Registrar una Cotizacion" />
+				<separator />
+				<grid width="93%">
+					<columns visible="false">
+						<column label="" width="16.6%" />
+						<column label="" width="16.6%" />
+						<column label="" width="16.6%" />
+						<column label="" width="16.6%" />
+						<column label="" width="16.6%" />
+						<column label="" width="17%" />
+					</columns>
+					<rows>
+						<row>
+							<hbox>
+								<label class="etiqueta" value="Nro Cotizacion:" />
+								<space />
+								<label value="" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<textbox disabled="true" id="txtNumero" hflex="1"
+								maxlength="10" tooltiptext="Numero de Cotizacion" />
+							<hbox>
+								<label class="etiqueta" value="Condicion Pago:" />
+								<space />
+								<label value="" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<textbox id="txtCondicion" hflex="1" maxlength="100"
+								tooltiptext="Seleccione del Catalogo la Condicion de Pago (F0014)" />
+							<button id="btnBuscarCondicion" autodisable="self" label="Buscar"
+								class="btn" tooltiptext="Catalogo de Codigos de Moneda (F0014)"
+								image="/public/imagenes/botones/buscar.png" />
+							<label id="lblCondicion" />
+
+						</row>
+						<row>
+							<label class="etiqueta" value="Comprador:" />
+							<textbox disabled="true" id="txtComprador" hflex="1"
+								maxlength="2" tooltiptext="Comprador" />
+							<cell colspan="4">
+								<div id="divbuscador" hflex="1" />
+							</cell>
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value="Fecha Cotizacion:" />
+								<space />
+								<label value="" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<datebox readonly="true" disabled="true" width="100%"
+								id="dtbFechaCotizacion" onCreate="self.value = new Date()"
+								tooltiptext="Fecha de la Cotizacion" />
+							<hbox>
+								<label class="etiqueta" value="Moneda:" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<textbox id="txtMoneda1" hflex="1" maxlength="100"
+								tooltiptext="Seleccione del Catalogo el Codigo de la Moneda (F0013)" />
+							<button id="btnBuscarMoneda1" autodisable="self" label="Buscar"
+								class="btn" tooltiptext="Catalogo de Codigos de Moneda (F0013)"
+								image="/public/imagenes/botones/buscar.png" />
+							<label id="lblMoneda1" />
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value="Fecha Requerida:" />
+								<space />
+								<label value="" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<datebox readonly="true" disabled="true" width="100%"
+								id="dtbFechaRequerida" onCreate="self.value = new Date()"
+								tooltiptext="Fecha de Requerida" />
+							<hbox />
+							<hbox />
+							<hbox>
+								<label class="etiqueta" value="Dias Entrega:" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<spinner id="spnDias" width="100%" step="1" value="0"
+								constraint="min 0 max 99999999" tooltiptext="Ingrese los dias de Entrega" />
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value="Anexo cabecera:" />
+								<space />
+								<label value="" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<cell colspan="3">
+								<textbox id="txtAnexo" hflex="1" maxlength="100"
+									tooltiptext="Anexo de Cabecera" />
+							</cell>
+							<hbox>
+								<label class="etiqueta" value="Fecha Vigencia de Oferta:" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<datebox readonly="true" width="100%" id="dtbFechaVigencia"
+								onCreate="self.value = new Date()" tooltiptext="Ingrese la Fecha de Vigencia de la Orden" />
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value="Comentarios:" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<cell colspan="5">
+								<textbox id="txtComentario" hflex="1" maxlength="100"
+									tooltiptext="Ingrese los comentarios referentes a la Cotizacion" />
+							</cell>
+						</row>
+					</rows>
+				</grid>
+				<groupbox id="gpxItems" visible="false" class="blanco"
+					title="" closable="false">
+					<caption label="Items de la Cotizacion" style="font-weight:bold; font-size: 12px" />
+					<separator />
+					<grid width="100%">
+						<columns visible="false">
+							<column label="" width="14%" />
+							<column label="" width="17%" />
+							<column label="" width="12.6%" />
+							<column label="" width="18%" />
+							<column label="" width="11.6%" />
+							<column label="" width="13.4%" />
+							<column label="" width="13.4%" />
+						</columns>
+						<rows>
+							<row>
+								<hbox>
+									<label class="etiqueta" value="Mostrar lineas:" />
+									<space />
+									<label value="" style="font-weight:bold;color:red" />
+								</hbox>
+								<radiogroup id="rdgIMABCSF4101"
+									tooltiptext="Seleccione una opcion para visualizar el estado de las lineas">
+									<radio id="rdpPorCargar" label="Pendientes por Cargar" />
+									<radio id="rdoCargada" label="Cargadas" />
+									<radio id="rdoTodas" label="Todas" />
+								</radiogroup>
+								<hbox>
+									<label class="etiqueta" value="Nª lineas:" />
+									<space />
+									<label value="" style="font-weight:bold;color:red" />
+								</hbox>
+								<label id="lblLinea" value="0" />
+								<hbox>
+									<label class="etiqueta" value="Total cotizacion:" />
+									<space />
+									<label value="" style="font-weight:bold;color:red" />
+								</hbox>
+								<doublebox id="txtTotal" hflex="1" maxlength="19"
+									readonly="true" tooltiptext="Total Cotizacion:" />
+							</row>
+						</rows>
+					</grid>
+					<div>
+						<listbox id="ltbLista" span="true" height="180px" width="100%">
+							<listhead>
+								<listheader label="Nº Linea" hflex="min" />
+								<listheader label="Descripcion" hflex="min" />
+								<listheader label="Descripcion 2" hflex="min" />
+								<listheader label="Anexo" hflex="min" />
+								<listheader label="UM" hflex="min" />
+								<listheader label="Cantidad" hflex="min" />
+								<listheader label="Precio unitario" hflex="min" />
+								<listheader label="Dias entrega" hflex="min" />
+								<listheader label="Obs" hflex="min" />
+								<listheader label="Estado" hflex="min" />
+								<listheader label="Sub. Total" hflex="min" />
+							</listhead>
+							<template name="model">
+								<listitem>
+									<listcell label="${each.numLinea}" />
+									<listcell label="${each.descripcion}" />
+									<listcell label="${each.sdpqor}" />
+									<listcell label="${each.anexo}" />
+									<listcell label="${each.um}" />
+									<listcell>
+										<spinner value="${each.cantidadEncargada}"
+											inplace="true" readonly="true" hflex="1"
+											constraint="min -99999999 max 99999999" step="1"
+											buttonVisible="false" />
+									</listcell>
+									<listcell>
+										<doublespinner value="${each.precioUnitario}"
+											inplace="true" readonly="true" hflex="1"
+											constraint="min -99999999 max 99999999" step="1"
+											buttonVisible="false" />
+									</listcell>
+									<listcell>
+										<spinner value="${each.diasEntrega}"
+											inplace="true" readonly="true" hflex="1"
+											constraint="min -99999999 max 99999999" step="1"
+											buttonVisible="false" />
+									</listcell>
+									<listcell label="${each.sdmcu}" />
+									<listcell label="${each.estado}" />
+									<listcell label="${each.sdlotn}" />
+								</listitem>
+							</template>
+						</listbox>
+					</div>
+				</groupbox>
+			</groupbox>
+			<separator />
+			<groupbox class="azul" id="gpxDatos" width="auto" title="">
+				<caption label="Registros" style="font-weight:bold"
+					tooltiptext="Presione para Visualizar las Cotizaciones Registradas" />
+				<grid width="100%">
+					<columns visible="false">
+						<column label="" width="16.6%" />
+						<column label="" width="16.6%" />
+						<column label="" width="16.6%" />
+						<column label="" width="16.6%" />
+						<column label="" width="16.6%" />
+						<column label="" width="17%" />
+					</columns>
+					<rows>
+						<row>
+							<label class="etiqueta" value="Desde:" />
+							<datebox readonly="true" width="100%" id="dtbDesde"
+								onCreate="self.value = new Date()" tooltiptext="Ingrese la Fecha de la Operacion" />
+							<label class="etiqueta" value="Hasta:" />
+							<datebox readonly="true" width="100%" id="dtbHasta"
+								onCreate="self.value = new Date()" tooltiptext="Ingrese la Fecha de la Operacion" />
+							<label class="etiqueta" value="Estado:" />
+							<combobox id="cmbEstado" readonly="true" tabindex="1"
+								value="NO RESPONDIDA" width="100%" tooltiptext="Seleccione Estado"
+								placeholder="Seleccione Estado">
+								<comboitem label="NO RESPONDIDA" />
+								<comboitem label="RESPONDIDA PARCIALMENTE" />
+								<comboitem label="RESPONDIDA COMPLETAMENTE" />
+								<comboitem label="TODAS" />
+							</combobox>
+						</row>
+					</rows>
+				</grid>
+				<div id="catalogoCotizacion" tooltiptext="Seleccione la Cotizacion para Realizar una Accion" />
+			</groupbox>
+			<separator />
+			<separator />
+		</groupbox>
+		<div id="divCatalogoF0014" tooltiptext="Click para Seleccionar un Codigo" />
+		<div id="divCatalogoF0013" tooltiptext="Click para Seleccionar un Codigo" />
+	</div>
+</zk>

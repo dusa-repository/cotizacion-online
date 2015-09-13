@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 
@@ -14,7 +15,7 @@ import javax.persistence.Table;
  * 
  */
 @Entity
-@Table(schema = "bizapps_wms_prime.dbo")
+@NamedQuery(name="F0013.findAll", query="SELECT f FROM F0013 f")
 public class F0013 implements Serializable {
 	private static final long serialVersionUID = 1L;
 
