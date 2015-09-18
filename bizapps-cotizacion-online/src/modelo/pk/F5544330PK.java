@@ -24,7 +24,10 @@ public class F5544330PK implements Serializable  {
 	private String exkcoo;
 
 	@Column(name="EXLNID")
-	private double exlnid;
+	private Double exlnid;
+	
+	@Column(name="EXAN8")
+	private BigDecimal exan8;
 
 	public F5544330PK() {
 		super();
@@ -55,55 +58,63 @@ public class F5544330PK implements Serializable  {
 		this.exkcoo = exkcoo;
 	}
 
-	public double getExlnid() {
+	public Double getExlnid() {
 		return exlnid;
 	}
 
-	public void setExlnid(double exlnid) {
+	public void setExlnid(Double exlnid) {
 		this.exlnid = exlnid;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((exdcto == null) ? 0 : exdcto.hashCode());
-		result = prime * result + ((exdoco == null) ? 0 : exdoco.hashCode());
-		result = prime * result + ((exkcoo == null) ? 0 : exkcoo.hashCode());
-		long temp;
-		temp = Double.doubleToLongBits(exlnid);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
-		return result;
+	public BigDecimal getExan8() {
+		return exan8;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		F5544330PK other = (F5544330PK) obj;
-		if (exdcto == null) {
-			if (other.exdcto != null)
-				return false;
-		} else if (!exdcto.equals(other.exdcto))
-			return false;
-		if (exdoco == null) {
-			if (other.exdoco != null)
-				return false;
-		} else if (!exdoco.equals(other.exdoco))
-			return false;
-		if (exkcoo == null) {
-			if (other.exkcoo != null)
-				return false;
-		} else if (!exkcoo.equals(other.exkcoo))
-			return false;
-		if (Double.doubleToLongBits(exlnid) != Double
-				.doubleToLongBits(other.exlnid))
-			return false;
-		return true;
+	public void setExan8(BigDecimal exan8) {
+		this.exan8 = exan8;
 	}
+
+//	@Override
+//	public int hashCode() {
+//		final int prime = 31;
+//		int result = 1;
+//		result = prime * result + ((exdcto == null) ? 0 : exdcto.hashCode());
+//		result = prime * result + ((exdoco == null) ? 0 : exdoco.hashCode());
+//		result = prime * result + ((exkcoo == null) ? 0 : exkcoo.hashCode());
+//		result = prime * result + ((exlnid == null) ? 0 : exlnid.hashCode());
+//		return result;
+//	}
+//
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (this == obj)
+//			return true;
+//		if (obj == null)
+//			return false;
+//		if (getClass() != obj.getClass())
+//			return false;
+//		F5544330PK other = (F5544330PK) obj;
+//		if (exdcto == null) {
+//			if (other.exdcto != null)
+//				return false;
+//		} else if (!exdcto.equals(other.exdcto))
+//			return false;
+//		if (exdoco == null) {
+//			if (other.exdoco != null)
+//				return false;
+//		} else if (!exdoco.equals(other.exdoco))
+//			return false;
+//		if (exkcoo == null) {
+//			if (other.exkcoo != null)
+//				return false;
+//		} else if (!exkcoo.equals(other.exkcoo))
+//			return false;
+//		if (exlnid == null) {
+//			if (other.exlnid != null)
+//				return false;
+//		} else if (!exlnid.equals(other.exlnid))
+//			return false;
+//		return true;
+//	}
 
 }

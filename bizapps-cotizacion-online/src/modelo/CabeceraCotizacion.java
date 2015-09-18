@@ -8,35 +8,33 @@ import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-
 /**
  * The persistent class for the cabecera_cotizacion database table.
  * 
  */
-@Entity
-@Table(name="cabecera_cotizacion")
-@NamedQuery(name="CabeceraCotizacion.findAll", query="SELECT c FROM CabeceraCotizacion c")
+
 public class CabeceraCotizacion implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private String estado;
 
-	@Column(name="fecha_emision")
 	private String fechaEmision;
 
-	@Column(name="fecha_vencimiento")
 	private String fechaVencimiento;
 
-	@Column(name="id_proveedor")
 	private String idProveedor;
 
-	@Id
 	private int idrow;
 
-	@Column(name="num_cotizacion")
 	private String numCotizacion;
 
 	private String responsable;
+
+	private Long diasEntrega;
+
+	private String anexo;
+
+	private String publicado;
 
 	public CabeceraCotizacion() {
 	}
@@ -95,6 +93,39 @@ public class CabeceraCotizacion implements Serializable {
 
 	public void setResponsable(String responsable) {
 		this.responsable = responsable;
+	}
+
+	public Long getDiasEntrega() {
+		return diasEntrega;
+	}
+
+	public void setDiasEntrega(Long diasEntrega) {
+		this.diasEntrega = diasEntrega;
+	}
+
+	public String getAnexo() {
+		return anexo;
+	}
+
+	public void setAnexo(String anexo) {
+		this.anexo = anexo;
+	}
+
+	public String mostrarEstado() {
+		if (estado != null)
+			if (estado.equals("PENDIENTE"))
+				return "NO RESPONDIDA";
+			else
+				return estado;
+		return "N/A";
+	}
+
+	public String getPublicado() {
+		return publicado;
+	}
+
+	public void setPublicado(String publicado) {
+		this.publicado = publicado;
 	}
 
 }

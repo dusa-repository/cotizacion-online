@@ -68,7 +68,7 @@ public abstract class BuscadorGenerico<Modelo, TipoSalida, Servicio, Campo exten
 		cell.setWidth(ancho);
 		cell.appendChild(hbox);
 		this.appendChild(cell);
-//		this.appendChild(hbox);
+		// this.appendChild(hbox);
 	}
 
 	private void cargarCampo(int longitud, String tooltipCajaTexto, String ancho) {
@@ -93,7 +93,7 @@ public abstract class BuscadorGenerico<Modelo, TipoSalida, Servicio, Campo exten
 		cell.setWidth(ancho);
 		cell.appendChild(cajaTexto);
 		this.appendChild(cell);
-//		this.appendChild(cajaTexto);
+		// this.appendChild(cajaTexto);
 	}
 
 	protected void buscarPorTexto() {
@@ -132,7 +132,7 @@ public abstract class BuscadorGenerico<Modelo, TipoSalida, Servicio, Campo exten
 		cell.setWidth(ancho);
 		cell.appendChild(boton);
 		this.appendChild(cell);
-//		this.appendChild(boton);
+		// this.appendChild(boton);
 	}
 
 	private void mostrarCatalogo() {
@@ -150,7 +150,7 @@ public abstract class BuscadorGenerico<Modelo, TipoSalida, Servicio, Campo exten
 		cell.setWidth(ancho);
 		cell.appendChild(lblNombre);
 		this.appendChild(cell);
-//		this.appendChild(lblNombre);
+		// this.appendChild(lblNombre);
 	}
 
 	private void cargarDivCatalogo(String tooltipCatalogo) {
@@ -188,6 +188,11 @@ public abstract class BuscadorGenerico<Modelo, TipoSalida, Servicio, Campo exten
 	public void settearCampo(TipoSalida valorBusqueda) {
 		Modelo modelo = buscarEnServicio(valorBusqueda);
 		settearModelo(modelo);
+	}
+
+	public void settearForced(String text, String label) {
+		cajaTexto.setText(text);
+		lblNombre.setValue(label);
 	}
 
 	protected abstract Modelo buscarEnServicio(TipoSalida valorBusqueda);

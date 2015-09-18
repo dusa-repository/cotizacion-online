@@ -15,7 +15,7 @@ public class F4311PK implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Column(name="PDDOCO")
-	private double pddoco;
+	private Double pddoco;
 
 	@Column(name="PDDCTO")
 	private String pddcto;
@@ -27,14 +27,14 @@ public class F4311PK implements Serializable {
 	private String pdsfxo;
 
 	@Column(name="PDLNID")
-	private double pdlnid;
+	private Double pdlnid;
 
 	public F4311PK() {
 	}
-	public double getPddoco() {
+	public Double getPddoco() {
 		return this.pddoco;
 	}
-	public void setPddoco(double pddoco) {
+	public void setPddoco(Double pddoco) {
 		this.pddoco = pddoco;
 	}
 	public String getPddcto() {
@@ -55,10 +55,10 @@ public class F4311PK implements Serializable {
 	public void setPdsfxo(String pdsfxo) {
 		this.pdsfxo = pdsfxo;
 	}
-	public double getPdlnid() {
+	public Double getPdlnid() {
 		return this.pdlnid;
 	}
-	public void setPdlnid(double pdlnid) {
+	public void setPdlnid(Double pdlnid) {
 		this.pdlnid = pdlnid;
 	}
 

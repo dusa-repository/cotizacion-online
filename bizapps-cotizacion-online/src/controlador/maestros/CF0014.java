@@ -99,8 +99,16 @@ public class CF0014 extends CGenerico {
 						txtCodigo.setValue(f013.getPnptc());
 						txtCodigo.setDisabled(true);
 						txtDescripcion.setValue(f013.getPnptd());
-						// txtDECF0013.setValue(f013.getCvcdec());
-						// txtDL01F0013.setValue(f013.getCvdl01());
+						txtField1.setValue(f013.getPnpid());
+						txtField2.setValue(f013.getPnjobn());
+						txtField3.setValue(f013.getPnnsp());
+						txtField4.setValue(f013.getPndcp());
+						txtField5.setValue(f013.getPndcd());
+						txtField6.setValue(f013.getPnndtp());
+						txtField7.setValue(f013.getPnpxdd());
+						txtField8.setValue(f013.getPndtpa());
+						txtField9.setValue(f013.getPneir());
+						txtField10.setValue(f013.getPnpxdm());
 						txtDescripcion.setFocus(true);
 					} else
 						Mensaje.mensajeAlerta(Mensaje.editarSoloUno);
@@ -130,12 +138,28 @@ public class CF0014 extends CGenerico {
 					F0014 f0013 = new F0014();
 					f0013.setPnptc(txtCodigo.getValue());
 					f0013.setPnptd(txtDescripcion.getValue());
-					// f0013.setCvdl01(txtDL01F0013.getValue());
-					// f0013.setCvcrcd(txtCRCDF0013.getValue());
-					// f0013.setCvupmj(Convertidor
-					// .transformarGregorianoAJulia(fecha));
-					// f0013.setCvupmt(Double.valueOf(horaAuditoria));
-					// f0013.setCvuser(nombreUsuarioSesion());
+					f0013.setPnpid(txtField1.getValue());
+					f0013.setPnjobn(txtField2.getValue());
+					f0013.setPnnsp(txtField3.getValue() != null ? txtField3
+							.getValue() : 0);
+					f0013.setPndcp(txtField4.getValue() != null ? txtField4
+							.getValue() : 0);
+					f0013.setPndcd(txtField5.getValue() != null ? txtField5
+							.getValue() : 0);
+					f0013.setPnndtp(txtField6.getValue() != null ? txtField6
+							.getValue() : 0);
+					f0013.setPnpxdd(txtField7.getValue() != null ? txtField7
+							.getValue() : 0);
+					f0013.setPndtpa(txtField8.getValue() != null ? txtField8
+							.getValue() : 0);
+					f0013.setPneir(txtField9.getValue() != null ? txtField9
+							.getValue() : 0);
+					f0013.setPnpxdm(txtField10.getValue() != null ? txtField10
+							.getValue() : 0);
+					f0013.setPnupmj(Convertidor
+							.transformarGregorianoAJulia(fecha));
+					f0013.setPnupmt(Double.valueOf(horaAuditoria));
+					f0013.setPnuser(nombreUsuarioSesion());
 					servicioF0014.guardar(f0013);
 					Mensaje.mensajeInformacion(Mensaje.guardado);
 					limpiar();

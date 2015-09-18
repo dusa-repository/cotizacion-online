@@ -10,97 +10,84 @@ import javax.persistence.NamedQuery;
 
 import modelo.pk.F5544330PK;
 
-
 /**
  * The persistent class for the F554330 database table.
  * 
  */
 @Entity
-@NamedQuery(name="F554330.findAll", query="SELECT f FROM F554330 f")
 public class F554330 implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@EmbeddedId
 	private F5544330PK id;
-	
-	@Column(name="EXAN8")
-	private BigDecimal exan8;
 
-	@Column(name="EXBHFU26")
+	@Column(name = "EXBHFU26")
 	private String exbhfu26;
 
-	@Column(name="EXDEL1")
+	@Column(name = "EXDEL1")
 	private String exdel1;
 
-	@Column(name="EXDEL2")
+	@Column(name = "EXDEL2")
 	private String exdel2;
 
-	@Column(name="EXDTSE")
+	@Column(name = "EXDTSE")
 	private BigDecimal exdtse;
 
-	@Column(name="EXFRTH")
+	@Column(name = "EXFRTH")
 	private String exfrth;
 
-	@Column(name="EXJOBN")
+	@Column(name = "EXJOBN")
 	private String exjobn;
 
-	@Column(name="EXPID")
+	@Column(name = "EXPID")
 	private String expid;
 
-	@Column(name="EXPTC")
+	@Column(name = "EXPTC")
 	private String exptc;
 
-	@Column(name="EXRUPT")
+	@Column(name = "EXRUPT")
 	private BigDecimal exrupt;
 
-	@Column(name="EXSFXO")
+	@Column(name = "EXSFXO")
 	private String exsfxo;
 
-	@Column(name="EXSOQS")
-	private double exsoqs;
+	@Column(name = "EXSOQS")
+	private Double exsoqs;
 
-	@Column(name="EXSORG")
+	@Column(name = "EXSORG")
 	private String exsorg;
 
-	@Column(name="EXSTDS")
+	@Column(name = "EXSTDS")
 	private String exstds;
 
-	@Column(name="EXSTRNGVAL")
+	@Column(name = "EXSTRNGVAL")
 	private String exstrngval;
 
-	@Column(name="EXUPMJ")
+	@Column(name = "EXUPMJ")
 	private BigDecimal exupmj;
 
-	@Column(name="EXUPMT")
+	@Column(name = "EXUPMT")
 	private BigDecimal exupmt;
 
-	@Column(name="EXURAB")
+	@Column(name = "EXURAB")
 	private BigDecimal exurab;
 
-	@Column(name="EXURAT")
-	private double exurat;
+	@Column(name = "EXURAT")
+	private Double exurat;
 
-	@Column(name="EXURCD")
+	@Column(name = "EXURCD")
 	private String exurcd;
 
-	@Column(name="EXURDT")
+	@Column(name = "EXURDT")
 	private BigDecimal exurdt;
 
-	@Column(name="EXURRF")
+	@Column(name = "EXURRF")
 	private String exurrf;
 
-	@Column(name="EXUSER")
+	@Column(name = "EXUSER")
 	private String exuser;
 
 	public F554330() {
-	}
-
-	public BigDecimal getExan8() {
-		return this.exan8;
-	}
-
-	public void setExan8(BigDecimal exan8) {
-		this.exan8 = exan8;
 	}
 
 	public String getExbhfu26() {
@@ -183,11 +170,11 @@ public class F554330 implements Serializable {
 		this.exsfxo = exsfxo;
 	}
 
-	public double getExsoqs() {
+	public Double getExsoqs() {
 		return this.exsoqs;
 	}
 
-	public void setExsoqs(double exsoqs) {
+	public void setExsoqs(Double exsoqs) {
 		this.exsoqs = exsoqs;
 	}
 
@@ -239,11 +226,11 @@ public class F554330 implements Serializable {
 		this.exurab = exurab;
 	}
 
-	public double getExurat() {
+	public Double getExurat() {
 		return this.exurat;
 	}
 
-	public void setExurat(double exurat) {
+	public void setExurat(Double exurat) {
 		this.exurat = exurat;
 	}
 

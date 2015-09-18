@@ -24,13 +24,13 @@ public class F4311 implements Serializable {
 	private F4311PK id;
 
 	@Column(name="PDACHG")
-	private double pdachg;
+	private Double pdachg;
 
 	@Column(name="PDADDJ")
 	private BigDecimal pdaddj;
 
 	@Column(name="PDAEXP")
-	private double pdaexp;
+	private Double pdaexp;
 
 	@Column(name="PDAID")
 	private String pdaid;
@@ -39,28 +39,28 @@ public class F4311 implements Serializable {
 	private String pdaitm;
 
 	@Column(name="PDAMC3")
-	private double pdamc3;
+	private Double pdamc3;
 
 	@Column(name="PDAN8")
-	private double pdan8;
+	private Double pdan8;
 
 	@Column(name="PDANBY")
-	private double pdanby;
+	private Double pdanby;
 
 	@Column(name="PDANCR")
-	private double pdancr;
+	private Double pdancr;
 
 	@Column(name="PDANI")
 	private String pdani;
 
 	@Column(name="PDAOPN")
-	private double pdaopn;
+	private Double pdaopn;
 
 	@Column(name="PDAREC")
-	private double pdarec;
+	private Double pdarec;
 
 	@Column(name="PDARLV")
-	private double pdarlv;
+	private Double pdarlv;
 
 	@Column(name="PDARTG")
 	private String pdartg;
@@ -87,7 +87,7 @@ public class F4311 implements Serializable {
 	private String pdcatn;
 
 	@Column(name="PDCCMP")
-	private double pdccmp;
+	private Double pdccmp;
 
 	@Column(name="PDCDCD")
 	private String pdcdcd;
@@ -99,7 +99,7 @@ public class F4311 implements Serializable {
 	private String pdchdt;
 
 	@Column(name="PDCHLN")
-	private double pdchln;
+	private Double pdchln;
 
 	@Column(name="PDCHMJ")
 	private BigDecimal pdchmj;
@@ -108,10 +108,10 @@ public class F4311 implements Serializable {
 	private String pdchrs;
 
 	@Column(name="PDCHRT")
-	private double pdchrt;
+	private Double pdchrt;
 
 	@Column(name="PDCHT")
-	private double pdcht;
+	private Double pdcht;
 
 	@Column(name="PDCLVL")
 	private String pdclvl;
@@ -126,34 +126,34 @@ public class F4311 implements Serializable {
 	private String pdcnid;
 
 	@Column(name="PDCNTRTDID")
-	private double pdcntrtdid;
+	private Double pdcntrtdid;
 
 	@Column(name="PDCNTRTID")
-	private double pdcntrtid;
+	private Double pdcntrtid;
 
 	@Column(name="PDCO")
 	private String pdco;
 
 	@Column(name="PDCORD")
-	private double pdcord;
+	private Double pdcord;
 
 	@Column(name="PDCOT")
 	private String pdcot;
 
 	@Column(name="PDCPNT")
-	private double pdcpnt;
+	private Double pdcpnt;
 
 	@Column(name="PDCRCD")
 	private String pdcrcd;
 
 	@Column(name="PDCREC")
-	private double pdcrec;
+	private Double pdcrec;
 
 	@Column(name="PDCRMD")
 	private String pdcrmd;
 
 	@Column(name="PDCRR")
-	private double pdcrr;
+	private Double pdcrr;
 
 	@Column(name="PDCSMP")
 	private String pdcsmp;
@@ -162,10 +162,10 @@ public class F4311 implements Serializable {
 	private String pdcsto;
 
 	@Column(name="PDCTAM")
-	private double pdctam;
+	private Double pdctam;
 
 	@Column(name="PDCTRY")
-	private double pdctry;
+	private Double pdctry;
 
 	@Column(name="PDDGL")
 	private BigDecimal pddgl;
@@ -174,19 +174,19 @@ public class F4311 implements Serializable {
 	private BigDecimal pddlej;
 
 	@Column(name="PDDMCS")
-	private double pddmcs;
+	private Double pddmcs;
 
 	@Column(name="PDDMCT")
 	private String pddmct;
 
 	@Column(name="PDDOCC")
-	private double pddocc;
+	private Double pddocc;
 
 	@Column(name="PDDRQJ")
 	private BigDecimal pddrqj;
 
 	@Column(name="PDDRQT")
-	private double pddrqt;
+	private Double pddrqt;
 
 	@Column(name="PDDSC1")
 	private String pddsc1;
@@ -195,7 +195,7 @@ public class F4311 implements Serializable {
 	private String pddsc2;
 
 	@Column(name="PDDSPR")
-	private double pddspr;
+	private Double pddspr;
 
 	@Column(name="PDDSVJ")
 	private BigDecimal pddsvj;
@@ -204,7 +204,7 @@ public class F4311 implements Serializable {
 	private String pddual;
 
 	@Column(name="PDECST")
-	private double pdecst;
+	private Double pdecst;
 
 	@Column(name="PDELEV")
 	private String pdelev;
@@ -213,16 +213,16 @@ public class F4311 implements Serializable {
 	private String pdexr1;
 
 	@Column(name="PDFAP")
-	private double pdfap;
+	private Double pdfap;
 
 	@Column(name="PDFCHG")
-	private double pdfchg;
+	private Double pdfchg;
 
 	@Column(name="PDFEA")
-	private double pdfea;
+	private Double pdfea;
 
 	@Column(name="PDFEC")
-	private double pdfec;
+	private Double pdfec;
 
 	@Column(name="PDFNLP")
 	private String pdfnlp;
@@ -231,16 +231,16 @@ public class F4311 implements Serializable {
 	private String pdfrat;
 
 	@Column(name="PDFREC")
-	private double pdfrec;
+	private Double pdfrec;
 
 	@Column(name="PDFRGD")
 	private String pdfrgd;
 
 	@Column(name="PDFRMP")
-	private double pdfrmp;
+	private Double pdfrmp;
 
 	@Column(name="PDFRRC")
-	private double pdfrrc;
+	private Double pdfrrc;
 
 	@Column(name="PDFRTC")
 	private String pdfrtc;
@@ -249,13 +249,13 @@ public class F4311 implements Serializable {
 	private String pdfrth;
 
 	@Column(name="PDFTN1")
-	private double pdftn1;
+	private Double pdftn1;
 
 	@Column(name="PDFTRL")
-	private double pdftrl;
+	private Double pdftrl;
 
 	@Column(name="PDFUC")
-	private double pdfuc;
+	private Double pdfuc;
 
 	@Column(name="PDFUF1")
 	private String pdfuf1;
@@ -264,13 +264,13 @@ public class F4311 implements Serializable {
 	private String pdfuf2;
 
 	@Column(name="PDFY")
-	private double pdfy;
+	private Double pdfy;
 
 	@Column(name="PDGLC")
 	private String pdglc;
 
 	@Column(name="PDGRWT")
-	private double pdgrwt;
+	private Double pdgrwt;
 
 	@Column(name="PDGWUM")
 	private String pdgwum;
@@ -279,13 +279,13 @@ public class F4311 implements Serializable {
 	private String pdinmg;
 
 	@Column(name="PDITM")
-	private double pditm;
+	private Double pditm;
 
 	@Column(name="PDITVL")
-	private double pditvl;
+	private Double pditvl;
 
 	@Column(name="PDITWT")
-	private double pditwt;
+	private Double pditwt;
 
 	@Column(name="PDJBCD")
 	private String pdjbcd;
@@ -294,13 +294,13 @@ public class F4311 implements Serializable {
 	private String pdjobn;
 
 	@Column(name="PDKTLN")
-	private double pdktln;
+	private Double pdktln;
 
 	@Column(name="PDLCOD")
 	private String pdlcod;
 
 	@Column(name="PDLDNM")
-	private double pdldnm;
+	private Double pdldnm;
 
 	@Column(name="PDLITM")
 	private String pdlitm;
@@ -327,7 +327,7 @@ public class F4311 implements Serializable {
 	private String pdmaty;
 
 	@Column(name="PDMCLN")
-	private double pdmcln;
+	private Double pdmcln;
 
 	@Column(name="PDMCU")
 	private String pdmcu;
@@ -336,7 +336,7 @@ public class F4311 implements Serializable {
 	private String pdmerl;
 
 	@Column(name="PDMKFR")
-	private double pdmkfr;
+	private Double pdmkfr;
 
 	@Column(name="PDMOADJ")
 	private String pdmoadj;
@@ -357,7 +357,7 @@ public class F4311 implements Serializable {
 	private String pdocto;
 
 	@Column(name="PDOGNO")
-	private double pdogno;
+	private Double pdogno;
 
 	@Column(name="PDOKCO")
 	private String pdokco;
@@ -423,7 +423,7 @@ public class F4311 implements Serializable {
 	private String pdpmtn;
 
 	@Column(name="PDPN")
-	private double pdpn;
+	private Double pdpn;
 
 	@Column(name="PDPODC01")
 	private String pdpodc01;
@@ -441,13 +441,13 @@ public class F4311 implements Serializable {
 	private BigDecimal pdppdj;
 
 	@Column(name="PDPQOR")
-	private double pdpqor;
+	private Double pdpqor;
 
 	@Column(name="PDPRGR")
 	private String pdprgr;
 
 	@Column(name="PDPRJM")
-	private double pdprjm;
+	private Double pdprjm;
 
 	@Column(name="PDPROM")
 	private String pdprom;
@@ -459,7 +459,7 @@ public class F4311 implements Serializable {
 	private String pdprpy;
 
 	@Column(name="PDPRRC")
-	private double pdprrc;
+	private Double pdprrc;
 
 	@Column(name="PDPS01")
 	private String pdps01;
@@ -522,7 +522,7 @@ public class F4311 implements Serializable {
 	private String pdrlit;
 
 	@Column(name="PDRLLN")
-	private double pdrlln;
+	private Double pdrlln;
 
 	@Column(name="PDRORN")
 	private String pdrorn;
@@ -531,7 +531,7 @@ public class F4311 implements Serializable {
 	private String pdrsfx;
 
 	@Column(name="PDRSHT")
-	private double pdrsht;
+	private Double pdrsht;
 
 	@Column(name="PDRTGC")
 	private String pdrtgc;
@@ -546,7 +546,7 @@ public class F4311 implements Serializable {
 	private String pdsblt;
 
 	@Column(name="PDSHAN")
-	private double pdshan;
+	private Double pdshan;
 
 	@Column(name="PDSHCM")
 	private String pdshcm;
@@ -555,13 +555,13 @@ public class F4311 implements Serializable {
 	private String pdshcn;
 
 	@Column(name="PDSHPN")
-	private double pdshpn;
+	private Double pdshpn;
 
 	@Column(name="PDSQOR")
-	private double pdsqor;
+	private Double pdsqor;
 
 	@Column(name="PDSRQTY")
-	private double pdsrqty;
+	private Double pdsrqty;
 
 	@Column(name="PDSRUOM")
 	private String pdsruom;
@@ -576,13 +576,13 @@ public class F4311 implements Serializable {
 	private String pdtag;
 
 	@Column(name="PDTDAY")
-	private double pdtday;
+	private Double pdtday;
 
 	@Column(name="PDTHGD")
 	private String pdthgd;
 
 	@Column(name="PDTHRP")
-	private double pdthrp;
+	private Double pdthrp;
 
 	@Column(name="PDTORG")
 	private String pdtorg;
@@ -591,7 +591,7 @@ public class F4311 implements Serializable {
 	private BigDecimal pdtrdj;
 
 	@Column(name="PDTRLV")
-	private double pdtrlv;
+	private Double pdtrlv;
 
 	@Column(name="PDTX")
 	private String pdtx;
@@ -600,10 +600,10 @@ public class F4311 implements Serializable {
 	private String pdtxa1;
 
 	@Column(name="PDUCHG")
-	private double pduchg;
+	private Double pduchg;
 
 	@Column(name="PDUKID")
-	private double pdukid;
+	private Double pdukid;
 
 	@Column(name="PDUNCD")
 	private String pduncd;
@@ -624,19 +624,19 @@ public class F4311 implements Serializable {
 	private String pduom3;
 
 	@Column(name="PDUOPN")
-	private double pduopn;
+	private Double pduopn;
 
 	@Column(name="PDUORG")
-	private double pduorg;
+	private Double pduorg;
 
 	@Column(name="PDUPMJ")
 	private BigDecimal pdupmj;
 
 	@Column(name="PDURAB")
-	private double pdurab;
+	private Double pdurab;
 
 	@Column(name="PDURAT")
-	private double pdurat;
+	private Double pdurat;
 
 	@Column(name="PDURCD")
 	private String pdurcd;
@@ -645,10 +645,10 @@ public class F4311 implements Serializable {
 	private BigDecimal pdurdt;
 
 	@Column(name="PDUREC")
-	private double pdurec;
+	private Double pdurec;
 
 	@Column(name="PDURLV")
-	private double pdurlv;
+	private Double pdurlv;
 
 	@Column(name="PDURRF")
 	private String pdurrf;
@@ -681,13 +681,13 @@ public class F4311 implements Serializable {
 	private String pdwtum;
 
 	@Column(name="PDWVID")
-	private double pdwvid;
+	private Double pdwvid;
 
 	@Column(name="PDZON")
 	private String pdzon;
 
 	@Column(name="PUBLICADO")
-	private boolean publicado;
+	private Boolean publicado;
 
 	public F4311() {
 	}
@@ -700,11 +700,11 @@ public class F4311 implements Serializable {
 		this.id = id;
 	}
 
-	public double getPdachg() {
+	public Double getPdachg() {
 		return this.pdachg;
 	}
 
-	public void setPdachg(double pdachg) {
+	public void setPdachg(Double pdachg) {
 		this.pdachg = pdachg;
 	}
 
@@ -716,11 +716,11 @@ public class F4311 implements Serializable {
 		this.pdaddj = pdaddj;
 	}
 
-	public double getPdaexp() {
+	public Double getPdaexp() {
 		return this.pdaexp;
 	}
 
-	public void setPdaexp(double pdaexp) {
+	public void setPdaexp(Double pdaexp) {
 		this.pdaexp = pdaexp;
 	}
 
@@ -740,35 +740,35 @@ public class F4311 implements Serializable {
 		this.pdaitm = pdaitm;
 	}
 
-	public double getPdamc3() {
+	public Double getPdamc3() {
 		return this.pdamc3;
 	}
 
-	public void setPdamc3(double pdamc3) {
+	public void setPdamc3(Double pdamc3) {
 		this.pdamc3 = pdamc3;
 	}
 
-	public double getPdan8() {
+	public Double getPdan8() {
 		return this.pdan8;
 	}
 
-	public void setPdan8(double pdan8) {
+	public void setPdan8(Double pdan8) {
 		this.pdan8 = pdan8;
 	}
 
-	public double getPdanby() {
+	public Double getPdanby() {
 		return this.pdanby;
 	}
 
-	public void setPdanby(double pdanby) {
+	public void setPdanby(Double pdanby) {
 		this.pdanby = pdanby;
 	}
 
-	public double getPdancr() {
+	public Double getPdancr() {
 		return this.pdancr;
 	}
 
-	public void setPdancr(double pdancr) {
+	public void setPdancr(Double pdancr) {
 		this.pdancr = pdancr;
 	}
 
@@ -780,27 +780,27 @@ public class F4311 implements Serializable {
 		this.pdani = pdani;
 	}
 
-	public double getPdaopn() {
+	public Double getPdaopn() {
 		return this.pdaopn;
 	}
 
-	public void setPdaopn(double pdaopn) {
+	public void setPdaopn(Double pdaopn) {
 		this.pdaopn = pdaopn;
 	}
 
-	public double getPdarec() {
+	public Double getPdarec() {
 		return this.pdarec;
 	}
 
-	public void setPdarec(double pdarec) {
+	public void setPdarec(Double pdarec) {
 		this.pdarec = pdarec;
 	}
 
-	public double getPdarlv() {
+	public Double getPdarlv() {
 		return this.pdarlv;
 	}
 
-	public void setPdarlv(double pdarlv) {
+	public void setPdarlv(Double pdarlv) {
 		this.pdarlv = pdarlv;
 	}
 
@@ -868,11 +868,11 @@ public class F4311 implements Serializable {
 		this.pdcatn = pdcatn;
 	}
 
-	public double getPdccmp() {
+	public Double getPdccmp() {
 		return this.pdccmp;
 	}
 
-	public void setPdccmp(double pdccmp) {
+	public void setPdccmp(Double pdccmp) {
 		this.pdccmp = pdccmp;
 	}
 
@@ -900,11 +900,11 @@ public class F4311 implements Serializable {
 		this.pdchdt = pdchdt;
 	}
 
-	public double getPdchln() {
+	public Double getPdchln() {
 		return this.pdchln;
 	}
 
-	public void setPdchln(double pdchln) {
+	public void setPdchln(Double pdchln) {
 		this.pdchln = pdchln;
 	}
 
@@ -924,19 +924,19 @@ public class F4311 implements Serializable {
 		this.pdchrs = pdchrs;
 	}
 
-	public double getPdchrt() {
+	public Double getPdchrt() {
 		return this.pdchrt;
 	}
 
-	public void setPdchrt(double pdchrt) {
+	public void setPdchrt(Double pdchrt) {
 		this.pdchrt = pdchrt;
 	}
 
-	public double getPdcht() {
+	public Double getPdcht() {
 		return this.pdcht;
 	}
 
-	public void setPdcht(double pdcht) {
+	public void setPdcht(Double pdcht) {
 		this.pdcht = pdcht;
 	}
 
@@ -972,19 +972,19 @@ public class F4311 implements Serializable {
 		this.pdcnid = pdcnid;
 	}
 
-	public double getPdcntrtdid() {
+	public Double getPdcntrtdid() {
 		return this.pdcntrtdid;
 	}
 
-	public void setPdcntrtdid(double pdcntrtdid) {
+	public void setPdcntrtdid(Double pdcntrtdid) {
 		this.pdcntrtdid = pdcntrtdid;
 	}
 
-	public double getPdcntrtid() {
+	public Double getPdcntrtid() {
 		return this.pdcntrtid;
 	}
 
-	public void setPdcntrtid(double pdcntrtid) {
+	public void setPdcntrtid(Double pdcntrtid) {
 		this.pdcntrtid = pdcntrtid;
 	}
 
@@ -996,11 +996,11 @@ public class F4311 implements Serializable {
 		this.pdco = pdco;
 	}
 
-	public double getPdcord() {
+	public Double getPdcord() {
 		return this.pdcord;
 	}
 
-	public void setPdcord(double pdcord) {
+	public void setPdcord(Double pdcord) {
 		this.pdcord = pdcord;
 	}
 
@@ -1012,11 +1012,11 @@ public class F4311 implements Serializable {
 		this.pdcot = pdcot;
 	}
 
-	public double getPdcpnt() {
+	public Double getPdcpnt() {
 		return this.pdcpnt;
 	}
 
-	public void setPdcpnt(double pdcpnt) {
+	public void setPdcpnt(Double pdcpnt) {
 		this.pdcpnt = pdcpnt;
 	}
 
@@ -1028,11 +1028,11 @@ public class F4311 implements Serializable {
 		this.pdcrcd = pdcrcd;
 	}
 
-	public double getPdcrec() {
+	public Double getPdcrec() {
 		return this.pdcrec;
 	}
 
-	public void setPdcrec(double pdcrec) {
+	public void setPdcrec(Double pdcrec) {
 		this.pdcrec = pdcrec;
 	}
 
@@ -1044,11 +1044,11 @@ public class F4311 implements Serializable {
 		this.pdcrmd = pdcrmd;
 	}
 
-	public double getPdcrr() {
+	public Double getPdcrr() {
 		return this.pdcrr;
 	}
 
-	public void setPdcrr(double pdcrr) {
+	public void setPdcrr(Double pdcrr) {
 		this.pdcrr = pdcrr;
 	}
 
@@ -1068,19 +1068,19 @@ public class F4311 implements Serializable {
 		this.pdcsto = pdcsto;
 	}
 
-	public double getPdctam() {
+	public Double getPdctam() {
 		return this.pdctam;
 	}
 
-	public void setPdctam(double pdctam) {
+	public void setPdctam(Double pdctam) {
 		this.pdctam = pdctam;
 	}
 
-	public double getPdctry() {
+	public Double getPdctry() {
 		return this.pdctry;
 	}
 
-	public void setPdctry(double pdctry) {
+	public void setPdctry(Double pdctry) {
 		this.pdctry = pdctry;
 	}
 
@@ -1100,11 +1100,11 @@ public class F4311 implements Serializable {
 		this.pddlej = pddlej;
 	}
 
-	public double getPddmcs() {
+	public Double getPddmcs() {
 		return this.pddmcs;
 	}
 
-	public void setPddmcs(double pddmcs) {
+	public void setPddmcs(Double pddmcs) {
 		this.pddmcs = pddmcs;
 	}
 
@@ -1116,11 +1116,11 @@ public class F4311 implements Serializable {
 		this.pddmct = pddmct;
 	}
 
-	public double getPddocc() {
+	public Double getPddocc() {
 		return this.pddocc;
 	}
 
-	public void setPddocc(double pddocc) {
+	public void setPddocc(Double pddocc) {
 		this.pddocc = pddocc;
 	}
 
@@ -1132,11 +1132,11 @@ public class F4311 implements Serializable {
 		this.pddrqj = pddrqj;
 	}
 
-	public double getPddrqt() {
+	public Double getPddrqt() {
 		return this.pddrqt;
 	}
 
-	public void setPddrqt(double pddrqt) {
+	public void setPddrqt(Double pddrqt) {
 		this.pddrqt = pddrqt;
 	}
 
@@ -1156,11 +1156,11 @@ public class F4311 implements Serializable {
 		this.pddsc2 = pddsc2;
 	}
 
-	public double getPddspr() {
+	public Double getPddspr() {
 		return this.pddspr;
 	}
 
-	public void setPddspr(double pddspr) {
+	public void setPddspr(Double pddspr) {
 		this.pddspr = pddspr;
 	}
 
@@ -1180,11 +1180,11 @@ public class F4311 implements Serializable {
 		this.pddual = pddual;
 	}
 
-	public double getPdecst() {
+	public Double getPdecst() {
 		return this.pdecst;
 	}
 
-	public void setPdecst(double pdecst) {
+	public void setPdecst(Double pdecst) {
 		this.pdecst = pdecst;
 	}
 
@@ -1204,35 +1204,35 @@ public class F4311 implements Serializable {
 		this.pdexr1 = pdexr1;
 	}
 
-	public double getPdfap() {
+	public Double getPdfap() {
 		return this.pdfap;
 	}
 
-	public void setPdfap(double pdfap) {
+	public void setPdfap(Double pdfap) {
 		this.pdfap = pdfap;
 	}
 
-	public double getPdfchg() {
+	public Double getPdfchg() {
 		return this.pdfchg;
 	}
 
-	public void setPdfchg(double pdfchg) {
+	public void setPdfchg(Double pdfchg) {
 		this.pdfchg = pdfchg;
 	}
 
-	public double getPdfea() {
+	public Double getPdfea() {
 		return this.pdfea;
 	}
 
-	public void setPdfea(double pdfea) {
+	public void setPdfea(Double pdfea) {
 		this.pdfea = pdfea;
 	}
 
-	public double getPdfec() {
+	public Double getPdfec() {
 		return this.pdfec;
 	}
 
-	public void setPdfec(double pdfec) {
+	public void setPdfec(Double pdfec) {
 		this.pdfec = pdfec;
 	}
 
@@ -1252,11 +1252,11 @@ public class F4311 implements Serializable {
 		this.pdfrat = pdfrat;
 	}
 
-	public double getPdfrec() {
+	public Double getPdfrec() {
 		return this.pdfrec;
 	}
 
-	public void setPdfrec(double pdfrec) {
+	public void setPdfrec(Double pdfrec) {
 		this.pdfrec = pdfrec;
 	}
 
@@ -1268,19 +1268,19 @@ public class F4311 implements Serializable {
 		this.pdfrgd = pdfrgd;
 	}
 
-	public double getPdfrmp() {
+	public Double getPdfrmp() {
 		return this.pdfrmp;
 	}
 
-	public void setPdfrmp(double pdfrmp) {
+	public void setPdfrmp(Double pdfrmp) {
 		this.pdfrmp = pdfrmp;
 	}
 
-	public double getPdfrrc() {
+	public Double getPdfrrc() {
 		return this.pdfrrc;
 	}
 
-	public void setPdfrrc(double pdfrrc) {
+	public void setPdfrrc(Double pdfrrc) {
 		this.pdfrrc = pdfrrc;
 	}
 
@@ -1300,27 +1300,27 @@ public class F4311 implements Serializable {
 		this.pdfrth = pdfrth;
 	}
 
-	public double getPdftn1() {
+	public Double getPdftn1() {
 		return this.pdftn1;
 	}
 
-	public void setPdftn1(double pdftn1) {
+	public void setPdftn1(Double pdftn1) {
 		this.pdftn1 = pdftn1;
 	}
 
-	public double getPdftrl() {
+	public Double getPdftrl() {
 		return this.pdftrl;
 	}
 
-	public void setPdftrl(double pdftrl) {
+	public void setPdftrl(Double pdftrl) {
 		this.pdftrl = pdftrl;
 	}
 
-	public double getPdfuc() {
+	public Double getPdfuc() {
 		return this.pdfuc;
 	}
 
-	public void setPdfuc(double pdfuc) {
+	public void setPdfuc(Double pdfuc) {
 		this.pdfuc = pdfuc;
 	}
 
@@ -1340,11 +1340,11 @@ public class F4311 implements Serializable {
 		this.pdfuf2 = pdfuf2;
 	}
 
-	public double getPdfy() {
+	public Double getPdfy() {
 		return this.pdfy;
 	}
 
-	public void setPdfy(double pdfy) {
+	public void setPdfy(Double pdfy) {
 		this.pdfy = pdfy;
 	}
 
@@ -1356,11 +1356,11 @@ public class F4311 implements Serializable {
 		this.pdglc = pdglc;
 	}
 
-	public double getPdgrwt() {
+	public Double getPdgrwt() {
 		return this.pdgrwt;
 	}
 
-	public void setPdgrwt(double pdgrwt) {
+	public void setPdgrwt(Double pdgrwt) {
 		this.pdgrwt = pdgrwt;
 	}
 
@@ -1380,27 +1380,27 @@ public class F4311 implements Serializable {
 		this.pdinmg = pdinmg;
 	}
 
-	public double getPditm() {
+	public Double getPditm() {
 		return this.pditm;
 	}
 
-	public void setPditm(double pditm) {
+	public void setPditm(Double pditm) {
 		this.pditm = pditm;
 	}
 
-	public double getPditvl() {
+	public Double getPditvl() {
 		return this.pditvl;
 	}
 
-	public void setPditvl(double pditvl) {
+	public void setPditvl(Double pditvl) {
 		this.pditvl = pditvl;
 	}
 
-	public double getPditwt() {
+	public Double getPditwt() {
 		return this.pditwt;
 	}
 
-	public void setPditwt(double pditwt) {
+	public void setPditwt(Double pditwt) {
 		this.pditwt = pditwt;
 	}
 
@@ -1420,11 +1420,11 @@ public class F4311 implements Serializable {
 		this.pdjobn = pdjobn;
 	}
 
-	public double getPdktln() {
+	public Double getPdktln() {
 		return this.pdktln;
 	}
 
-	public void setPdktln(double pdktln) {
+	public void setPdktln(Double pdktln) {
 		this.pdktln = pdktln;
 	}
 
@@ -1436,11 +1436,11 @@ public class F4311 implements Serializable {
 		this.pdlcod = pdlcod;
 	}
 
-	public double getPdldnm() {
+	public Double getPdldnm() {
 		return this.pdldnm;
 	}
 
-	public void setPdldnm(double pdldnm) {
+	public void setPdldnm(Double pdldnm) {
 		this.pdldnm = pdldnm;
 	}
 
@@ -1508,11 +1508,11 @@ public class F4311 implements Serializable {
 		this.pdmaty = pdmaty;
 	}
 
-	public double getPdmcln() {
+	public Double getPdmcln() {
 		return this.pdmcln;
 	}
 
-	public void setPdmcln(double pdmcln) {
+	public void setPdmcln(Double pdmcln) {
 		this.pdmcln = pdmcln;
 	}
 
@@ -1532,11 +1532,11 @@ public class F4311 implements Serializable {
 		this.pdmerl = pdmerl;
 	}
 
-	public double getPdmkfr() {
+	public Double getPdmkfr() {
 		return this.pdmkfr;
 	}
 
-	public void setPdmkfr(double pdmkfr) {
+	public void setPdmkfr(Double pdmkfr) {
 		this.pdmkfr = pdmkfr;
 	}
 
@@ -1588,11 +1588,11 @@ public class F4311 implements Serializable {
 		this.pdocto = pdocto;
 	}
 
-	public double getPdogno() {
+	public Double getPdogno() {
 		return this.pdogno;
 	}
 
-	public void setPdogno(double pdogno) {
+	public void setPdogno(Double pdogno) {
 		this.pdogno = pdogno;
 	}
 
@@ -1764,11 +1764,11 @@ public class F4311 implements Serializable {
 		this.pdpmtn = pdpmtn;
 	}
 
-	public double getPdpn() {
+	public Double getPdpn() {
 		return this.pdpn;
 	}
 
-	public void setPdpn(double pdpn) {
+	public void setPdpn(Double pdpn) {
 		this.pdpn = pdpn;
 	}
 
@@ -1812,11 +1812,11 @@ public class F4311 implements Serializable {
 		this.pdppdj = pdppdj;
 	}
 
-	public double getPdpqor() {
+	public Double getPdpqor() {
 		return this.pdpqor;
 	}
 
-	public void setPdpqor(double pdpqor) {
+	public void setPdpqor(Double pdpqor) {
 		this.pdpqor = pdpqor;
 	}
 
@@ -1828,11 +1828,11 @@ public class F4311 implements Serializable {
 		this.pdprgr = pdprgr;
 	}
 
-	public double getPdprjm() {
+	public Double getPdprjm() {
 		return this.pdprjm;
 	}
 
-	public void setPdprjm(double pdprjm) {
+	public void setPdprjm(Double pdprjm) {
 		this.pdprjm = pdprjm;
 	}
 
@@ -1860,11 +1860,11 @@ public class F4311 implements Serializable {
 		this.pdprpy = pdprpy;
 	}
 
-	public double getPdprrc() {
+	public Double getPdprrc() {
 		return this.pdprrc;
 	}
 
-	public void setPdprrc(double pdprrc) {
+	public void setPdprrc(Double pdprrc) {
 		this.pdprrc = pdprrc;
 	}
 
@@ -2028,11 +2028,11 @@ public class F4311 implements Serializable {
 		this.pdrlit = pdrlit;
 	}
 
-	public double getPdrlln() {
+	public Double getPdrlln() {
 		return this.pdrlln;
 	}
 
-	public void setPdrlln(double pdrlln) {
+	public void setPdrlln(Double pdrlln) {
 		this.pdrlln = pdrlln;
 	}
 
@@ -2052,11 +2052,11 @@ public class F4311 implements Serializable {
 		this.pdrsfx = pdrsfx;
 	}
 
-	public double getPdrsht() {
+	public Double getPdrsht() {
 		return this.pdrsht;
 	}
 
-	public void setPdrsht(double pdrsht) {
+	public void setPdrsht(Double pdrsht) {
 		this.pdrsht = pdrsht;
 	}
 
@@ -2092,11 +2092,11 @@ public class F4311 implements Serializable {
 		this.pdsblt = pdsblt;
 	}
 
-	public double getPdshan() {
+	public Double getPdshan() {
 		return this.pdshan;
 	}
 
-	public void setPdshan(double pdshan) {
+	public void setPdshan(Double pdshan) {
 		this.pdshan = pdshan;
 	}
 
@@ -2116,27 +2116,27 @@ public class F4311 implements Serializable {
 		this.pdshcn = pdshcn;
 	}
 
-	public double getPdshpn() {
+	public Double getPdshpn() {
 		return this.pdshpn;
 	}
 
-	public void setPdshpn(double pdshpn) {
+	public void setPdshpn(Double pdshpn) {
 		this.pdshpn = pdshpn;
 	}
 
-	public double getPdsqor() {
+	public Double getPdsqor() {
 		return this.pdsqor;
 	}
 
-	public void setPdsqor(double pdsqor) {
+	public void setPdsqor(Double pdsqor) {
 		this.pdsqor = pdsqor;
 	}
 
-	public double getPdsrqty() {
+	public Double getPdsrqty() {
 		return this.pdsrqty;
 	}
 
-	public void setPdsrqty(double pdsrqty) {
+	public void setPdsrqty(Double pdsrqty) {
 		this.pdsrqty = pdsrqty;
 	}
 
@@ -2172,11 +2172,11 @@ public class F4311 implements Serializable {
 		this.pdtag = pdtag;
 	}
 
-	public double getPdtday() {
+	public Double getPdtday() {
 		return this.pdtday;
 	}
 
-	public void setPdtday(double pdtday) {
+	public void setPdtday(Double pdtday) {
 		this.pdtday = pdtday;
 	}
 
@@ -2188,11 +2188,11 @@ public class F4311 implements Serializable {
 		this.pdthgd = pdthgd;
 	}
 
-	public double getPdthrp() {
+	public Double getPdthrp() {
 		return this.pdthrp;
 	}
 
-	public void setPdthrp(double pdthrp) {
+	public void setPdthrp(Double pdthrp) {
 		this.pdthrp = pdthrp;
 	}
 
@@ -2212,11 +2212,11 @@ public class F4311 implements Serializable {
 		this.pdtrdj = pdtrdj;
 	}
 
-	public double getPdtrlv() {
+	public Double getPdtrlv() {
 		return this.pdtrlv;
 	}
 
-	public void setPdtrlv(double pdtrlv) {
+	public void setPdtrlv(Double pdtrlv) {
 		this.pdtrlv = pdtrlv;
 	}
 
@@ -2236,19 +2236,19 @@ public class F4311 implements Serializable {
 		this.pdtxa1 = pdtxa1;
 	}
 
-	public double getPduchg() {
+	public Double getPduchg() {
 		return this.pduchg;
 	}
 
-	public void setPduchg(double pduchg) {
+	public void setPduchg(Double pduchg) {
 		this.pduchg = pduchg;
 	}
 
-	public double getPdukid() {
+	public Double getPdukid() {
 		return this.pdukid;
 	}
 
-	public void setPdukid(double pdukid) {
+	public void setPdukid(Double pdukid) {
 		this.pdukid = pdukid;
 	}
 
@@ -2300,19 +2300,19 @@ public class F4311 implements Serializable {
 		this.pduom3 = pduom3;
 	}
 
-	public double getPduopn() {
+	public Double getPduopn() {
 		return this.pduopn;
 	}
 
-	public void setPduopn(double pduopn) {
+	public void setPduopn(Double pduopn) {
 		this.pduopn = pduopn;
 	}
 
-	public double getPduorg() {
+	public Double getPduorg() {
 		return this.pduorg;
 	}
 
-	public void setPduorg(double pduorg) {
+	public void setPduorg(Double pduorg) {
 		this.pduorg = pduorg;
 	}
 
@@ -2324,19 +2324,19 @@ public class F4311 implements Serializable {
 		this.pdupmj = pdupmj;
 	}
 
-	public double getPdurab() {
+	public Double getPdurab() {
 		return this.pdurab;
 	}
 
-	public void setPdurab(double pdurab) {
+	public void setPdurab(Double pdurab) {
 		this.pdurab = pdurab;
 	}
 
-	public double getPdurat() {
+	public Double getPdurat() {
 		return this.pdurat;
 	}
 
-	public void setPdurat(double pdurat) {
+	public void setPdurat(Double pdurat) {
 		this.pdurat = pdurat;
 	}
 
@@ -2356,19 +2356,19 @@ public class F4311 implements Serializable {
 		this.pdurdt = pdurdt;
 	}
 
-	public double getPdurec() {
+	public Double getPdurec() {
 		return this.pdurec;
 	}
 
-	public void setPdurec(double pdurec) {
+	public void setPdurec(Double pdurec) {
 		this.pdurec = pdurec;
 	}
 
-	public double getPdurlv() {
+	public Double getPdurlv() {
 		return this.pdurlv;
 	}
 
-	public void setPdurlv(double pdurlv) {
+	public void setPdurlv(Double pdurlv) {
 		this.pdurlv = pdurlv;
 	}
 
@@ -2452,11 +2452,11 @@ public class F4311 implements Serializable {
 		this.pdwtum = pdwtum;
 	}
 
-	public double getPdwvid() {
+	public Double getPdwvid() {
 		return this.pdwvid;
 	}
 
-	public void setPdwvid(double pdwvid) {
+	public void setPdwvid(Double pdwvid) {
 		this.pdwvid = pdwvid;
 	}
 
@@ -2468,11 +2468,11 @@ public class F4311 implements Serializable {
 		this.pdzon = pdzon;
 	}
 
-	public boolean getPublicado() {
+	public Boolean getPublicado() {
 		return this.publicado;
 	}
 
-	public void setPublicado(boolean publicado) {
+	public void setPublicado(Boolean publicado) {
 		this.publicado = publicado;
 	}
 

@@ -1,6 +1,7 @@
 package modelo;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,49 +14,46 @@ import javax.persistence.Table;
  * The persistent class for the detalle_cotizacion database table.
  * 
  */
-@Entity
-@Table(name="detalle_cotizacion")
-@NamedQuery(name="DetalleCotizacion.findAll", query="SELECT d FROM DetalleCotizacion d")
 public class DetalleCotizacion implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private String anexo;
 
-	@Column(name="cantidad_encargada")
-	private String cantidadEncargada;
+	private Integer cantidadEncargada;
 
 	private String descripcion;
 
-	@Column(name="dias_entrega")
-	private String diasEntrega;
+	private String descripcion2;
+
+	private Integer diasEntrega;
 
 	private String estado;
 
-	private String fecha;
+	private Date fecha;
 
 	private String hora;
 
-	@Column(name="id_articulo")
-	private String idArticulo;
+	private Double idArticulo;
 
-	@Column(name="id_proveedor")
+	private Double total;
+
 	private String idProveedor;
 
-	@Id
-	private int idrow;
+	private String moneda;
 
-	@Column(name="num_cotizacion")
-	private int numCotizacion;
+	private Integer idrow;
 
-	@Column(name="num_linea")
-	private int numLinea;
+	private Integer numCotizacion;
 
-	@Column(name="precio_unitario")
-	private String precioUnitario;
+	private Integer numLinea;
+
+	private Double precioUnitario;
 
 	private String um;
 
 	private String usuario;
+
+	private String publicado;
 
 	public DetalleCotizacion() {
 	}
@@ -68,28 +66,12 @@ public class DetalleCotizacion implements Serializable {
 		this.anexo = anexo;
 	}
 
-	public String getCantidadEncargada() {
-		return this.cantidadEncargada;
-	}
-
-	public void setCantidadEncargada(String cantidadEncargada) {
-		this.cantidadEncargada = cantidadEncargada;
-	}
-
 	public String getDescripcion() {
 		return this.descripcion;
 	}
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
-	}
-
-	public String getDiasEntrega() {
-		return this.diasEntrega;
-	}
-
-	public void setDiasEntrega(String diasEntrega) {
-		this.diasEntrega = diasEntrega;
 	}
 
 	public String getEstado() {
@@ -100,11 +82,11 @@ public class DetalleCotizacion implements Serializable {
 		this.estado = estado;
 	}
 
-	public String getFecha() {
+	public Date getFecha() {
 		return this.fecha;
 	}
 
-	public void setFecha(String fecha) {
+	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
 
@@ -116,11 +98,11 @@ public class DetalleCotizacion implements Serializable {
 		this.hora = hora;
 	}
 
-	public String getIdArticulo() {
+	public Double getIdArticulo() {
 		return this.idArticulo;
 	}
 
-	public void setIdArticulo(String idArticulo) {
+	public void setIdArticulo(Double idArticulo) {
 		this.idArticulo = idArticulo;
 	}
 
@@ -132,36 +114,44 @@ public class DetalleCotizacion implements Serializable {
 		this.idProveedor = idProveedor;
 	}
 
-	public int getIdrow() {
+	public Integer getIdrow() {
 		return this.idrow;
 	}
 
-	public void setIdrow(int idrow) {
+	public void setIdrow(Integer idrow) {
 		this.idrow = idrow;
 	}
 
-	public int getNumCotizacion() {
+	public Integer getNumCotizacion() {
 		return this.numCotizacion;
 	}
 
-	public void setNumCotizacion(int numCotizacion) {
+	public void setNumCotizacion(Integer numCotizacion) {
 		this.numCotizacion = numCotizacion;
 	}
 
-	public int getNumLinea() {
+	public Integer getNumLinea() {
 		return this.numLinea;
 	}
 
-	public void setNumLinea(int numLinea) {
+	public void setNumLinea(Integer numLinea) {
 		this.numLinea = numLinea;
 	}
 
-	public String getPrecioUnitario() {
-		return this.precioUnitario;
+	public Double getTotal() {
+		return total;
 	}
 
-	public void setPrecioUnitario(String precioUnitario) {
-		this.precioUnitario = precioUnitario;
+	public String getMoneda() {
+		return moneda;
+	}
+
+	public void setMoneda(String moneda) {
+		this.moneda = moneda;
+	}
+
+	public void setTotal(Double total) {
+		this.total = total;
 	}
 
 	public String getUm() {
@@ -178,6 +168,46 @@ public class DetalleCotizacion implements Serializable {
 
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
+	}
+
+	public Integer getCantidadEncargada() {
+		return cantidadEncargada;
+	}
+
+	public void setCantidadEncargada(Integer cantidadEncargada) {
+		this.cantidadEncargada = cantidadEncargada;
+	}
+
+	public Integer getDiasEntrega() {
+		return diasEntrega;
+	}
+
+	public void setDiasEntrega(Integer diasEntrega) {
+		this.diasEntrega = diasEntrega;
+	}
+
+	public Double getPrecioUnitario() {
+		return precioUnitario;
+	}
+
+	public void setPrecioUnitario(Double precioUnitario) {
+		this.precioUnitario = precioUnitario;
+	}
+
+	public String getDescripcion2() {
+		return descripcion2;
+	}
+
+	public void setDescripcion2(String descripcion2) {
+		this.descripcion2 = descripcion2;
+	}
+
+	public String getPublicado() {
+		return publicado;
+	}
+
+	public void setPublicado(String publicado) {
+		this.publicado = publicado;
 	}
 
 }

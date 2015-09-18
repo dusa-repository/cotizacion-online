@@ -8,6 +8,8 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.NamedQuery;
 
+import org.hibernate.annotations.Type;
+
 import modelo.pk.F4331PK;
 
 
@@ -33,13 +35,14 @@ public class F4331 implements Serializable {
 	private BigDecimal p1pddj;
 
 	@Column(name="P1PRRC")
-	private double p1prrc;
+	private Double p1prrc;
 
 	@Column(name="P1QRDJ")
 	private BigDecimal p1qrdj;
 
 	@Column(name="PUBLICADO")
-	private boolean publicado;
+	@Type(type = "org.hibernate.type.NumericBooleanType")
+	private Boolean publicado;
 
 	public F4331() {
 	}
@@ -76,11 +79,11 @@ public class F4331 implements Serializable {
 		this.p1pddj = p1pddj;
 	}
 
-	public double getP1prrc() {
+	public Double getP1prrc() {
 		return this.p1prrc;
 	}
 
-	public void setP1prrc(double p1prrc) {
+	public void setP1prrc(Double p1prrc) {
 		this.p1prrc = p1prrc;
 	}
 
@@ -92,11 +95,11 @@ public class F4331 implements Serializable {
 		this.p1qrdj = p1qrdj;
 	}
 
-	public boolean getPublicado() {
+	public Boolean getPublicado() {
 		return this.publicado;
 	}
 
-	public void setPublicado(boolean publicado) {
+	public void setPublicado(Boolean publicado) {
 		this.publicado = publicado;
 	}
 

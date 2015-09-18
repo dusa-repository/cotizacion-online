@@ -1,6 +1,6 @@
 <zk>
 	<style src="/public/Estilo.css" />
-	<div id="divUsuario" width="100%"  apply="security.controlador.CUsuario">
+	<div id="divUsuario" width="100%" apply="controlador.maestros.CUsuario">
 		<groupbox mold="3d" width="auto" title="Usuario">
 			<div id="botoneraUsuario" />
 			<groupbox id="gpxRegistro" class="azul" width="auto" title="">
@@ -72,6 +72,19 @@
 								label="Foto">
 							</button>
 							<image id="imagen" width="50px" height="50px" />
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value="Direccion:" />
+								<space />
+								<label value="" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<longbox id="txtF0101" hflex="1" maxlength="19"
+								tooltiptext="Ingrese la Direccion asociada al Usuario" />
+							<button autodisable="self" id="btnBuscarF0101" class="btn"
+								label="Buscar" tooltiptext="Catalogo" image="/public/imagenes/botones/buscar.png" />
+							<label id="lblF0101" />
 						</row>
 						<row>
 							<cell colspan="4">

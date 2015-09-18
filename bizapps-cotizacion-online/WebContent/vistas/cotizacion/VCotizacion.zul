@@ -10,7 +10,7 @@
 				<caption label="Nuevo" style="font-weight:bold"
 					tooltiptext="Presione para Registrar una Cotizacion" />
 				<separator />
-				<grid width="93%">
+				<grid>
 					<columns visible="false">
 						<column label="" width="16.6%" />
 						<column label="" width="16.6%" />
@@ -32,7 +32,7 @@
 							<hbox>
 								<label class="etiqueta" value="Condicion Pago:" />
 								<space />
-								<label value="" style="font-weight:bold;color:red">
+								<label value="*" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
 							<textbox id="txtCondicion" hflex="1" maxlength="100"
@@ -46,7 +46,7 @@
 						<row>
 							<label class="etiqueta" value="Comprador:" />
 							<textbox disabled="true" id="txtComprador" hflex="1"
-								maxlength="2" tooltiptext="Comprador" />
+								tooltiptext="Comprador" />
 							<cell colspan="4">
 								<div id="divbuscador" hflex="1" />
 							</cell>
@@ -103,8 +103,8 @@
 								</label>
 							</hbox>
 							<cell colspan="3">
-								<textbox id="txtAnexo" hflex="1" maxlength="100"
-									tooltiptext="Anexo de Cabecera" />
+								<textbox disabled="true" id="txtAnexo" hflex="1"
+									maxlength="100" tooltiptext="Anexo de Cabecera" />
 							</cell>
 							<hbox>
 								<label class="etiqueta" value="Fecha Vigencia de Oferta:" />
@@ -123,25 +123,23 @@
 								</label>
 							</hbox>
 							<cell colspan="5">
-								<textbox id="txtComentario" hflex="1" maxlength="100"
+								<textbox id="txtComentario" hflex="1" maxlength="255"
 									tooltiptext="Ingrese los comentarios referentes a la Cotizacion" />
 							</cell>
 						</row>
 					</rows>
 				</grid>
-				<groupbox id="gpxItems" visible="false" class="blanco"
-					title="" closable="false">
+				<groupbox id="gpxItems" class="blanco" title="" closable="false">
 					<caption label="Items de la Cotizacion" style="font-weight:bold; font-size: 12px" />
 					<separator />
 					<grid width="100%">
 						<columns visible="false">
-							<column label="" width="14%" />
-							<column label="" width="17%" />
-							<column label="" width="12.6%" />
-							<column label="" width="18%" />
-							<column label="" width="11.6%" />
-							<column label="" width="13.4%" />
-							<column label="" width="13.4%" />
+							<column label="" width="12%" />
+							<column label="" width="40%" />
+							<column label="" width="12%" />
+							<column label="" width="12%" />
+							<column label="" width="12%" />
+							<column label="" width="12%" />
 						</columns>
 						<rows>
 							<row>
@@ -152,9 +150,11 @@
 								</hbox>
 								<radiogroup id="rdgIMABCSF4101"
 									tooltiptext="Seleccione una opcion para visualizar el estado de las lineas">
-									<radio id="rdpPorCargar" label="Pendientes por Cargar" />
+									<radio id="rdoPorCargar" label="Pendientes por Cargar" />
+									<space />
 									<radio id="rdoCargada" label="Cargadas" />
-									<radio id="rdoTodas" label="Todas" />
+									<space />
+									<radio id="rdoTodas" label="Todas" checked="true" />
 								</radiogroup>
 								<hbox>
 									<label class="etiqueta" value="Nª lineas:" />
@@ -167,13 +167,14 @@
 									<space />
 									<label value="" style="font-weight:bold;color:red" />
 								</hbox>
-								<doublebox id="txtTotal" hflex="1" maxlength="19"
-									readonly="true" tooltiptext="Total Cotizacion:" />
+								<doublebox value="0" id="txtTotal" hflex="1"
+									maxlength="19" readonly="true" tooltiptext="Total Cotizacion:" />
 							</row>
 						</rows>
 					</grid>
 					<div>
-						<listbox id="ltbLista" span="true" height="180px" width="100%">
+						<listbox id="ltbLista" span="true" width="100%"
+							mold="paging" pageSize="10">
 							<listhead>
 								<listheader label="Nº Linea" hflex="min" />
 								<listheader label="Descripcion" hflex="min" />
@@ -185,36 +186,34 @@
 								<listheader label="Dias entrega" hflex="min" />
 								<listheader label="Obs" hflex="min" />
 								<listheader label="Estado" hflex="min" />
-								<listheader label="Sub. Total" hflex="min" />
+								<listheader label="Total" hflex="min" />
 							</listhead>
 							<template name="model">
 								<listitem>
 									<listcell label="${each.numLinea}" />
 									<listcell label="${each.descripcion}" />
-									<listcell label="${each.sdpqor}" />
+									<listcell label="${each.descripcion2}" />
 									<listcell label="${each.anexo}" />
 									<listcell label="${each.um}" />
 									<listcell>
-										<spinner value="${each.cantidadEncargada}"
-											inplace="true" readonly="true" hflex="1"
-											constraint="min -99999999 max 99999999" step="1"
-											buttonVisible="false" />
+										<spinner instant="true" value="${each.cantidadEncargada}"
+											inplace=" true " hflex="1" constraint="min 0 max 99999999"
+											step="1" onChanging='$composer.cambio' onChange='$composer.cambio' />
 									</listcell>
 									<listcell>
-										<doublespinner value="${each.precioUnitario}"
-											inplace="true" readonly="true" hflex="1"
-											constraint="min -99999999 max 99999999" step="1"
-											buttonVisible="false" />
+										<doublespinner instant="true" value="${each.precioUnitario}"
+											inplace="true" hflex="1" constraint="min -99999999 max 99999999"
+											step="1" onChanging='$composer.cambio' onChange='$composer.cambio' />
 									</listcell>
 									<listcell>
-										<spinner value="${each.diasEntrega}"
-											inplace="true" readonly="true" hflex="1"
-											constraint="min -99999999 max 99999999" step="1"
-											buttonVisible="false" />
+										<spinner value="1" inplace="true" hflex="1"
+											constraint="min -99999999 max 99999999" step="1" />
 									</listcell>
-									<listcell label="${each.sdmcu}" />
+									<listcell>
+										<textbox hflex="1" maxlength="100" inplace="true" />
+									</listcell>
 									<listcell label="${each.estado}" />
-									<listcell label="${each.sdlotn}" />
+									<listcell label="${each.total}" />
 								</listitem>
 							</template>
 						</listbox>
@@ -227,21 +226,12 @@
 					tooltiptext="Presione para Visualizar las Cotizaciones Registradas" />
 				<grid width="100%">
 					<columns visible="false">
-						<column label="" width="16.6%" />
-						<column label="" width="16.6%" />
-						<column label="" width="16.6%" />
-						<column label="" width="16.6%" />
-						<column label="" width="16.6%" />
-						<column label="" width="17%" />
+						<column label="" width="15%" />
+						<column label="" width="25%" />
+						<column label="" width="60%" />
 					</columns>
 					<rows>
 						<row>
-							<label class="etiqueta" value="Desde:" />
-							<datebox readonly="true" width="100%" id="dtbDesde"
-								onCreate="self.value = new Date()" tooltiptext="Ingrese la Fecha de la Operacion" />
-							<label class="etiqueta" value="Hasta:" />
-							<datebox readonly="true" width="100%" id="dtbHasta"
-								onCreate="self.value = new Date()" tooltiptext="Ingrese la Fecha de la Operacion" />
 							<label class="etiqueta" value="Estado:" />
 							<combobox id="cmbEstado" readonly="true" tabindex="1"
 								value="NO RESPONDIDA" width="100%" tooltiptext="Seleccione Estado"
@@ -251,6 +241,7 @@
 								<comboitem label="RESPONDIDA COMPLETAMENTE" />
 								<comboitem label="TODAS" />
 							</combobox>
+							<hbox />
 						</row>
 					</rows>
 				</grid>

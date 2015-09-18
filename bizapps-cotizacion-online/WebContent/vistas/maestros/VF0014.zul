@@ -12,10 +12,10 @@
 				<separator />
 				<grid width="100%">
 					<columns visible="false">
-						<column label="" width="20%" />
-						<column label="" width="10%" />
 						<column label="" width="25%" />
-						<column label="" width="45%" />
+						<column label="" width="25%" />
+						<column label="" width="25%" />
+						<column label="" width="25%" />
 					</columns>
 					<rows>
 						<row>
@@ -25,7 +25,7 @@
 								<label value="*" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<textbox id="txtCodigo" hflex="1" maxlength="10"
+							<textbox id="txtCodigo" hflex="1" maxlength="3"
 								tooltiptext="Ingrese el Codigo de la Condicion de Pago (pnptc)" />
 							<hbox>
 								<label class="etiqueta" value="Descripcion:" />
@@ -33,98 +33,98 @@
 								<label value="*" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<textbox id="txtDescripcion" hflex="1" maxlength="20"
+							<textbox id="txtDescripcion" hflex="1" maxlength="30"
 								tooltiptext="Ingrese la Descripcion de la Condicion de Pago (CVCRCD)" />
 						</row>
 						<row>
 							<hbox>
-								<label class="etiqueta" value="Codigo:" />
+								<label class="etiqueta" value="Campo 1:" />
 								<space />
 								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<textbox id="txtField1" hflex="1" maxlength="3"
-								tooltiptext="Ingrese el Codigo de la Moneda (CVCRCD)" />
+							<textbox id="txtField1" hflex="1" maxlength="10"
+								tooltiptext="Ingrese el Campo (PNPID)" />
 							<hbox>
-								<label class="etiqueta" value="Descripcion:" />
+								<label class="etiqueta" value="Campo 2:" />
 								<space />
 								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
-							<textbox id="txtField2" hflex="1" maxlength="3"
-								tooltiptext="Ingrese el Codigo de la Moneda (CVCRCD)" />
+							<textbox id="txtField2" hflex="1" maxlength="10"
+								tooltiptext="Ingrese el Campo (PNJOBN)" />
 						</row>
 						<row>
 							<hbox>
-								<label class="etiqueta" value=" Siglo" />
+								<label class="etiqueta" value="Campo 3" />
 								<space />
 								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
 							<doublebox id="txtField3" hflex="1"
-								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+								tooltiptext="Ingrese el Campo (PNNSP)" />
 							<hbox>
-								<label class="etiqueta" value=" Siglo" />
+								<label class="etiqueta" value="Campo 4" />
 								<space />
 								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
 							<doublebox id="txtField4" hflex="1"
-								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+								tooltiptext="Ingrese el Campo (PNDCP)" />
 						</row>
 						<row>
 							<hbox>
-								<label class="etiqueta" value=" Siglo" />
+								<label class="etiqueta" value="Campo 5" />
 								<space />
 								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
 							<doublebox id="txtField5" hflex="1"
-								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+								tooltiptext="Ingrese el Siglo (PNDCD)" />
 							<hbox>
-								<label class="etiqueta" value=" Siglo" />
+								<label class="etiqueta" value="Campo 6" />
 								<space />
 								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
 							<doublebox id="txtField6" hflex="1"
-								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+								tooltiptext="Ingrese el Siglo (PNNDTP)" />
 						</row>
 						<row>
 							<hbox>
-								<label class="etiqueta" value=" Siglo" />
+								<label class="etiqueta" value="Campo 7" />
 								<space />
 								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
 							<doublebox id="txtField7" hflex="1"
-								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+								tooltiptext="Ingrese el Siglo (PNPXDD)" />
 							<hbox>
-								<label class="etiqueta" value=" Siglo" />
+								<label class="etiqueta" value="Campo 8" />
 								<space />
 								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
 							<doublebox id="txtField8" hflex="1"
-								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+								tooltiptext="Ingrese el Siglo (PNDTPA)" />
 						</row>
 						<row>
 							<hbox>
-								<label class="etiqueta" value=" Siglo" />
+								<label class="etiqueta" value="Campo 9" />
 								<space />
 								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
 							<doublebox id="txtField9" hflex="1"
-								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+								tooltiptext="Ingrese el Siglo (PNEIR)" />
 							<hbox>
-								<label class="etiqueta" value=" Siglo" />
+								<label class="etiqueta" value="Campo 10" />
 								<space />
 								<label value="" style="font-weight:bold;color:red">
 								</label>
 							</hbox>
 							<doublebox id="txtField10" hflex="1"
-								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+								tooltiptext="Ingrese el Siglo (PNPXDM)" />
 						</row>
 					</rows>
 				</grid>

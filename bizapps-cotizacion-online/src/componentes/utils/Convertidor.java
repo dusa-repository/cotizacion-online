@@ -12,6 +12,9 @@ public class Convertidor {
 
 	public static SimpleDateFormat formatoFecha = new SimpleDateFormat(
 			"dd-MM-yyyy");
+
+	public static SimpleDateFormat formatoFecha2 = new SimpleDateFormat(
+			"dd/MM/yyyy");
 	public static DateFormat df = new SimpleDateFormat("HH:mm:ss");
 
 	public static Date transformarJulianaAGregoria(BigDecimal valor) {
@@ -78,7 +81,7 @@ public class Convertidor {
 		}
 		return date;
 	}
-	
+
 	public static BigDecimal transformarGregorianoAJulia(Date fecha) {
 		String valor = "";
 
@@ -101,6 +104,19 @@ public class Convertidor {
 				+ dia + String.valueOf(calendario.get(Calendar.DAY_OF_YEAR)));
 		BigDecimal a = BigDecimal.valueOf(al);
 		return a;
+	}
+
+	public static Long restarFechas(Date fecha) {
+		long diff = fecha.getTime() - new Date().getTime();
+		long diffDays = diff / (24 * 60 * 60 * 1000);
+		return diffDays;
+	}
+
+	public static Date sumarDias(Date value, Integer dias) {
+		Calendar calendario = new GregorianCalendar();
+		calendario.setTime(value);
+		calendario.add(Calendar.DATE, dias);
+		return calendario.getTime();
 	}
 
 }

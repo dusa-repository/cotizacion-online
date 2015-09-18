@@ -1,0 +1,111 @@
+<zk>
+	<style src="../public/Estilo.css" />
+	<div id="divVF00021" apply="controlador.maestros.CF00021">
+		<groupbox mold="3d" width="auto"
+			title="Número Siguiente por Compañia/Año Fiscal (VF00021)">
+			<div id="botoneraF00021" />
+			<separator />
+			<groupbox id="gpxRegistro" width="auto" title="" open="false"
+				class="azul">
+				<caption label="Nuevo" style="font-weight:bold"
+					tooltiptext="Presione para Ingresar compañia" />
+				<separator />
+				<grid width="100%">
+					<columns visible="false">
+						<column label="" width="20%" />
+						<column label="" width="20%" />
+						<column label="" width="16%" />
+						<column label="" width="44%" />
+					</columns>
+					<rows>
+						<row>
+							<hbox>
+								<label class="etiqueta" value=" Compañia Documento" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<textbox id="txtKCOF00021" hflex="1" maxlength="5" width="45%"
+								tooltiptext="Seleccione del Catalogo el Codigo de la Compañia Documento (CCCO de F0010)" />
+							<hbox />
+							<hbox />
+							<hbox />
+							<hbox />
+						</row>
+						<row>
+							<cell colspan="4">
+								<div id="divbuscadorDCT" hflex="1" />
+							</cell>
+							<hbox />
+							<hbox />
+						</row>
+						<row>
+							<cell colspan="4">
+								<div id="divbuscadorSMAS" hflex="1" />
+							</cell>
+							<hbox />
+							<hbox />
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value=" Descripción" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<textbox id="txtDESF00021" hflex="1" maxlength="100"
+								width="45%" tooltiptext="Ingrese la descripción" />
+							<hbox />
+							<hbox />
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value=" Siglo" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtCTRYF00021" hflex="1" width="45%"
+								tooltiptext="Ingrese el Siglo (NLCTRY)" />
+							<hbox />
+							<hbox />
+						</row>
+						<row>
+							<hbox>
+								<label class="etiqueta" value="Año Fiscal" />
+								<space />
+								<label value="*" style="font-weight:bold;color:red">
+								</label>
+							</hbox>
+							<doublebox id="txtFYF00021" hflex="1" width="45%"
+								tooltiptext="Ingrese el año fiscal (NLFY)" />
+							<hbox />
+							<hbox />
+						</row>
+						<row>
+							<cell colspan="4">
+								<div id="divbuscadorINCRUS" hflex="1" />
+							</cell>
+							<hbox />
+							<hbox />
+						</row>
+						<row>
+							<label class="etiqueta" value=" Número Siguiente" />
+							<doublebox id="txtN001F00021" hflex="1" width="45%"
+								tooltiptext="Número Siguiente (NLN001)" />
+							<hbox />
+							<hbox />
+						</row>
+					</rows>
+				</grid>
+			</groupbox>
+			<separator />
+			<groupbox class="azul" id="gpxDatos" width="auto" title="">
+				<caption label="Registros" style="font-weight:bold"
+					tooltiptext="Presione para Visualizar las compañias" />
+				<div id="catalogoF00021" tooltiptext="Seleccione la compañia para Realizar una Accion" />
+			</groupbox>
+		</groupbox>
+		<div id="divCatalogoF0010" tooltiptext="Click para Seleccionar un Codigo" />
+	</div>
+</zk>
